@@ -19,13 +19,17 @@ public class MainActivity extends AppCompatActivity {
 
     TextView txtFirstNum, txtSecondNum, txtOperands, txtResult;
 
-    double number;
+    int number;
     int tempNumber = 0;
 
     boolean buttonCheck = false;
     boolean firstNumberCheck = false;
     boolean secondNumberCheck = false;
     boolean FlagOperandsCheck = false;
+
+    int num1,num2;
+
+    int add0_1,minus0_1,multi0_1,divide0_1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,6 +56,10 @@ public class MainActivity extends AppCompatActivity {
                 txtSecondNum.setText(" ");
                 txtOperands.setText(" ");
                 txtResult.setText(" ");
+                buttonCheck = false;
+                firstNumberCheck = false;
+                secondNumberCheck = false;
+                FlagOperandsCheck = false;
                 break;
 
 
@@ -83,10 +91,13 @@ public class MainActivity extends AppCompatActivity {
             case R.id.main_btn_one:
                 buttonCheck = true;
                 number = 1;
+
                 if (!FlagOperandsCheck) {
                     txtFirstNum.append(String.valueOf(number));
+                    firstNumberCheck=true;
                 } else {
                     txtSecondNum.append(String.valueOf(number));
+                    secondNumberCheck=true;
                 }
 
 
@@ -98,8 +109,10 @@ public class MainActivity extends AppCompatActivity {
                 number = 2;
                 if (!FlagOperandsCheck) {
                     txtFirstNum.append(String.valueOf(number));
+                    firstNumberCheck=true;
                 } else {
                     txtSecondNum.append(String.valueOf(number));
+                    secondNumberCheck=true;
                 }
 
                 break;
@@ -110,8 +123,10 @@ public class MainActivity extends AppCompatActivity {
                 number = 3;
                 if (!FlagOperandsCheck) {
                     txtFirstNum.append(String.valueOf(number));
+                    firstNumberCheck=true;
                 } else {
                     txtSecondNum.append(String.valueOf(number));
+                    secondNumberCheck=true;
                 }
 
                 break;
@@ -122,8 +137,10 @@ public class MainActivity extends AppCompatActivity {
                 number = 4;
                 if (!FlagOperandsCheck) {
                     txtFirstNum.append(String.valueOf(number));
+                    firstNumberCheck=true;
                 } else {
                     txtSecondNum.append(String.valueOf(number));
+                    secondNumberCheck=true;
                 }
 
                 break;
@@ -134,8 +151,10 @@ public class MainActivity extends AppCompatActivity {
                 number = 5;
                 if (!FlagOperandsCheck) {
                     txtFirstNum.append(String.valueOf(number));
+                    firstNumberCheck=true;
                 } else {
                     txtSecondNum.append(String.valueOf(number));
+                    secondNumberCheck=true;
                 }
 
                 break;
@@ -146,8 +165,10 @@ public class MainActivity extends AppCompatActivity {
                 number = 6;
                 if (!FlagOperandsCheck) {
                     txtFirstNum.append(String.valueOf(number));
+                    firstNumberCheck=true;
                 } else {
                     txtSecondNum.append(String.valueOf(number));
+                    secondNumberCheck=true;
                 }
 
                 break;
@@ -158,8 +179,10 @@ public class MainActivity extends AppCompatActivity {
                 number = 7;
                 if (!FlagOperandsCheck) {
                     txtFirstNum.append(String.valueOf(number));
+                    firstNumberCheck=true;
                 } else {
                     txtSecondNum.append(String.valueOf(number));
+                    secondNumberCheck=true;
                 }
 
                 break;
@@ -170,8 +193,10 @@ public class MainActivity extends AppCompatActivity {
                 number = 8;
                 if (!FlagOperandsCheck) {
                     txtFirstNum.append(String.valueOf(number));
+                    firstNumberCheck=true;
                 } else {
                     txtSecondNum.append(String.valueOf(number));
+                    secondNumberCheck=true;
                 }
 
                 break;
@@ -182,8 +207,10 @@ public class MainActivity extends AppCompatActivity {
                 number = 9;
                 if (!FlagOperandsCheck) {
                     txtFirstNum.append(String.valueOf(number));
+                    firstNumberCheck=true;
                 } else {
                     txtSecondNum.append(String.valueOf(number));
+                    secondNumberCheck=true;
                 }
 
                 break;
@@ -194,8 +221,10 @@ public class MainActivity extends AppCompatActivity {
                 number = 0;
                 if (!FlagOperandsCheck) {
                     txtFirstNum.append(String.valueOf(number));
+                    firstNumberCheck=true;
                 } else {
                     txtSecondNum.append(String.valueOf(number));
+                    secondNumberCheck=true;
                 }
 
                 break;
@@ -213,37 +242,102 @@ public class MainActivity extends AppCompatActivity {
 
 
             case R.id.main_btn_add:
-                txtOperands.setText(" ");
-                FlagOperandsCheck = true;
-                txtOperands.setText("+");
+                if (firstNumberCheck)
+                {
+                    add0_1=1;
+                    minus0_1=0;
+                    multi0_1=0;
+                    divide0_1=0;
+                    txtOperands.setText(" ");
+                    FlagOperandsCheck = true;
+                    txtOperands.setText("+");
+                }
 
                 break;
 
 
             case R.id.main_btn_minus:
-                txtOperands.setText(" ");
-                FlagOperandsCheck = true;
-                txtOperands.setText("-");
+                if (firstNumberCheck) {
+                    add0_1=0;
+                    minus0_1=1;
+                    multi0_1=0;
+                    divide0_1=0;
+                    txtOperands.setText(" ");
+                    FlagOperandsCheck = true;
+                    txtOperands.setText("-");
+                }
 
                 break;
 
 
             case R.id.main_btn_multiply:
-                txtOperands.setText(" ");
-                FlagOperandsCheck = true;
-                txtOperands.setText("X");
+                if (firstNumberCheck) {
+                    add0_1=0;
+                    minus0_1=0;
+                    multi0_1=1;
+                    divide0_1=0;
+                    txtOperands.setText(" ");
+                    FlagOperandsCheck = true;
+                    txtOperands.setText("X");
+                }
 
                 break;
 
 
             case R.id.main_btn_divide:
-                txtOperands.setText(" ");
-                FlagOperandsCheck = true;
-                txtOperands.setText("/");
+                if (firstNumberCheck) {
+                    add0_1=0;
+                    minus0_1=0;
+                    multi0_1=0;
+                    divide0_1=1;
+                    txtOperands.setText(" ");
+                    FlagOperandsCheck = true;
+                    txtOperands.setText("/");
+                }
 
                 break;
 
+            case R.id.main_btn_equal:
+                int tempTotal = add0_1+minus0_1+divide0_1+multi0_1;
+                num1 = Integer.parseInt(String.valueOf(txtFirstNum.getText()));
+                num2 = Integer.parseInt(String.valueOf(txtSecondNum.getText()));
 
+                if (firstNumberCheck && secondNumberCheck && tempTotal==1)
+                {
+                    if (add0_1==1)
+                    {
+                        txtResult.setText(" ");
+                        txtResult.setText(String.valueOf(num1+num2));
+                    }
+                    else if (minus0_1==1)
+                    {
+                        txtResult.setText(" ");
+                        if (num1>=num2)
+                        {
+                            txtResult.setText(String.valueOf(num1-num2));
+                        }
+                        else if (num2>num1){
+                            txtResult.setText("-"+String.valueOf(num2-num1));
+                        }
+                    }
+                    else if (multi0_1==1)
+                    {
+                        txtResult.setText(" ");
+                        txtResult.setText(String.valueOf(num1*num2));
+                    }
+                    else if (divide0_1==1)
+                    {
+                        txtResult.setText(" ");
+                        txtResult.setText(String.valueOf(num1/num2));
+                    }
+                    else
+                    {
+                        Toast.makeText(this, "Error...", Toast.LENGTH_SHORT).show();
+                    }
+                }
+
+
+                break;
         }
     }
 

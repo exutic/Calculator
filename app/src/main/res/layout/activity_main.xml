@@ -12,6 +12,7 @@
 
 
     <TextView
+        android:textColor="@android:color/black"
         android:id="@+id/main_firstNumber"
         android:layout_width="125dp"
         android:layout_height="125dp"
@@ -28,6 +29,7 @@
         app:layout_constraintVertical_bias="0.021" />
 
     <TextView
+        android:textColor="@android:color/black"
         android:id="@+id/main_resultNumber"
         android:layout_width="375dp"
         android:layout_height="100dp"
@@ -43,6 +45,7 @@
         app:layout_constraintVertical_bias="0.248" />
 
     <TextView
+        android:textColor="@android:color/black"
         android:id="@+id/main_secondNumber"
         android:layout_width="125dp"
         android:layout_height="125dp"
@@ -56,7 +59,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.029" />
+        app:layout_constraintVertical_bias="0.021" />
 
     <TextView
         android:id="@+id/main_operands"
@@ -74,12 +77,13 @@
 
 
     <com.google.android.material.button.MaterialButton
+        android:onClick="ON_CLICKS"
         android:id="@+id/main_btn_one"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:backgroundTint="@android:color/holo_green_light"
         android:text="I"
-        android:textSize="22dp"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.130"
@@ -91,12 +95,13 @@
         app:strokeWidth="3dp" />
 
     <com.google.android.material.button.MaterialButton
+        android:onClick="ON_CLICKS"
         android:id="@+id/main_btn_two"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:backgroundTint="@android:color/holo_green_light"
         android:text="II"
-        android:textSize="22dp"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.360"
@@ -108,12 +113,13 @@
         app:strokeWidth="3dp" />
 
     <com.google.android.material.button.MaterialButton
+        android:onClick="ON_CLICKS"
         android:id="@+id/main_btn_three"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:backgroundTint="@android:color/holo_green_light"
         android:text="III"
-        android:textSize="22dp"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.590"
@@ -125,12 +131,13 @@
         app:strokeWidth="3dp" />
 
     <com.google.android.material.button.MaterialButton
+        android:onClick="ON_CLICKS"
         android:id="@+id/main_btn_four"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:backgroundTint="@android:color/holo_green_light"
         android:text="IV"
-        android:textSize="22dp"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.130"
@@ -142,12 +149,13 @@
         app:strokeWidth="3dp" />
 
     <com.google.android.material.button.MaterialButton
+        android:onClick="ON_CLICKS"
         android:id="@+id/main_btn_five"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:backgroundTint="@android:color/holo_green_light"
         android:text="V"
-        android:textSize="22dp"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.360"
@@ -159,12 +167,13 @@
         app:strokeWidth="3dp" />
 
     <com.google.android.material.button.MaterialButton
+        android:onClick="ON_CLICKS"
         android:id="@+id/main_btn_six"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:backgroundTint="@android:color/holo_green_light"
         android:text="VI"
-        android:textSize="22dp"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.590"
@@ -177,12 +186,13 @@
 
 
     <com.google.android.material.button.MaterialButton
+        android:onClick="ON_CLICKS"
         android:id="@+id/main_btn_seven"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:backgroundTint="@android:color/holo_green_light"
         android:text="VII"
-        android:textSize="22dp"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.130"
@@ -194,12 +204,13 @@
         app:strokeWidth="3dp" />
 
     <com.google.android.material.button.MaterialButton
+        android:onClick="ON_CLICKS"
         android:id="@+id/main_btn_eight"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:backgroundTint="@android:color/holo_green_light"
         android:text="IIX"
-        android:textSize="22dp"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.360"
@@ -211,12 +222,13 @@
         app:strokeWidth="3dp" />
 
     <com.google.android.material.button.MaterialButton
+        android:onClick="ON_CLICKS"
         android:id="@+id/main_btn_nine"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:backgroundTint="@android:color/holo_green_light"
         android:text="IX"
-        android:textSize="22dp"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.590"
@@ -228,12 +240,13 @@
         app:strokeWidth="3dp" />
 
     <com.google.android.material.button.MaterialButton
+        android:onClick="ON_CLICKS"
         android:id="@+id/main_btn_dot"
         android:layout_width="45dp"
         android:layout_height="60dp"
         android:backgroundTint="@android:color/holo_green_light"
         android:text="."
-        android:textSize="22dp"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.603"
@@ -245,12 +258,13 @@
         app:strokeWidth="3dp" />
 
     <com.google.android.material.button.MaterialButton
+        android:onClick="ON_CLICKS"
         android:id="@+id/main_btn_zero"
-        android:layout_width="150dp"
+        android:layout_width="125dp"
         android:layout_height="60dp"
         android:backgroundTint="@android:color/holo_green_light"
         android:text="0"
-        android:textSize="22dp"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.187"
@@ -262,12 +276,13 @@
         app:strokeWidth="3dp" />
 
     <com.google.android.material.button.MaterialButton
+        android:onClick="ON_CLICKS"
         android:id="@+id/main_btn_divide"
         android:layout_width="75dp"
         android:layout_height="50dp"
         android:backgroundTint="@android:color/holo_red_dark"
         android:text="/"
-        android:textSize="22dp"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.872"
@@ -279,12 +294,31 @@
         app:strokeWidth="3dp" />
 
     <com.google.android.material.button.MaterialButton
+        android:onClick="ON_CLICKS"
+        android:id="@+id/main_btn_equal"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:text="="
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.872"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.874"
+        app:rippleColor="@android:color/holo_green_dark"
+        app:strokeColor="@android:color/holo_purple"
+        app:strokeWidth="3dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:onClick="ON_CLICKS"
         android:id="@+id/main_btn_multiply"
         android:layout_width="75dp"
         android:layout_height="50dp"
         android:backgroundTint="@android:color/holo_red_dark"
         android:text="X"
-        android:textSize="22dp"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.872"
@@ -296,12 +330,13 @@
         app:strokeWidth="3dp" />
 
     <com.google.android.material.button.MaterialButton
+        android:onClick="ON_CLICKS"
         android:id="@+id/main_btn_minus"
         android:layout_width="75dp"
         android:layout_height="50dp"
         android:backgroundTint="@android:color/holo_red_dark"
         android:text="-"
-        android:textSize="22dp"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.872"
@@ -313,12 +348,13 @@
         app:strokeWidth="3dp" />
 
     <com.google.android.material.button.MaterialButton
+        android:onClick="ON_CLICKS"
         android:id="@+id/main_btn_add"
         android:layout_width="75dp"
         android:layout_height="50dp"
         android:backgroundTint="@android:color/holo_red_dark"
         android:text="+"
-        android:textSize="22dp"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.872"
@@ -330,6 +366,7 @@
         app:strokeWidth="3dp" />
 
     <com.google.android.material.button.MaterialButton
+        android:onClick="ON_CLICKS"
         android:id="@+id/main_btn_reset"
         android:layout_width="60dp"
         android:layout_height="60dp"
@@ -347,6 +384,7 @@
         app:strokeWidth="3dp" />
 
     <com.google.android.material.button.MaterialButton
+        android:onClick="ON_CLICKS"
         android:id="@+id/main_btn_x2"
         android:layout_width="60dp"
         android:layout_height="60dp"
@@ -364,6 +402,7 @@
         app:strokeWidth="3dp" />
 
     <com.google.android.material.button.MaterialButton
+        android:onClick="ON_CLICKS"
         android:id="@+id/main_btn_sq"
         android:layout_width="60dp"
         android:layout_height="60dp"
