@@ -77,7 +77,7 @@
 
 
     <com.google.android.material.button.MaterialButton
-        android:onClick="ON_CLICKS_Numbers"
+        android:onClick="numbers_ONClicks"
         android:id="@+id/main_btn_one"
         android:layout_width="60dp"
         android:layout_height="60dp"
@@ -96,7 +96,7 @@
 
 
     <com.google.android.material.button.MaterialButton
-        android:onClick="ON_CLICKS_Numbers"
+        android:onClick="numbers_ONClicks"
         android:id="@+id/main_btn_two"
         android:layout_width="60dp"
         android:layout_height="60dp"
@@ -114,7 +114,7 @@
         app:strokeWidth="3dp" />
 
     <com.google.android.material.button.MaterialButton
-        android:onClick="ON_CLICKS_Numbers"
+        android:onClick="numbers_ONClicks"
         android:id="@+id/main_btn_three"
         android:layout_width="60dp"
         android:layout_height="60dp"
@@ -132,7 +132,7 @@
         app:strokeWidth="3dp" />
 
     <com.google.android.material.button.MaterialButton
-        android:onClick="ON_CLICKS_Numbers"
+        android:onClick="numbers_ONClicks"
         android:id="@+id/main_btn_four"
         android:layout_width="60dp"
         android:layout_height="60dp"
@@ -150,7 +150,7 @@
         app:strokeWidth="3dp" />
 
     <com.google.android.material.button.MaterialButton
-        android:onClick="ON_CLICKS_Numbers"
+        android:onClick="numbers_ONClicks"
         android:id="@+id/main_btn_five"
         android:layout_width="60dp"
         android:layout_height="60dp"
@@ -168,7 +168,7 @@
         app:strokeWidth="3dp" />
 
     <com.google.android.material.button.MaterialButton
-        android:onClick="ON_CLICKS_Numbers"
+        android:onClick="numbers_ONClicks"
         android:id="@+id/main_btn_six"
         android:layout_width="60dp"
         android:layout_height="60dp"
@@ -187,7 +187,7 @@
 
 
     <com.google.android.material.button.MaterialButton
-        android:onClick="ON_CLICKS_Numbers"
+        android:onClick="numbers_ONClicks"
         android:id="@+id/main_btn_seven"
         android:layout_width="60dp"
         android:layout_height="60dp"
@@ -205,7 +205,7 @@
         app:strokeWidth="3dp" />
 
     <com.google.android.material.button.MaterialButton
-        android:onClick="ON_CLICKS_Numbers"
+        android:onClick="numbers_ONClicks"
         android:id="@+id/main_btn_eight"
         android:layout_width="60dp"
         android:layout_height="60dp"
@@ -223,7 +223,7 @@
         app:strokeWidth="3dp" />
 
     <com.google.android.material.button.MaterialButton
-        android:onClick="ON_CLICKS_Numbers"
+        android:onClick="numbers_ONClicks"
         android:id="@+id/main_btn_nine"
         android:layout_width="60dp"
         android:layout_height="60dp"
@@ -241,7 +241,7 @@
         app:strokeWidth="3dp" />
 
     <com.google.android.material.button.MaterialButton
-        android:onClick="ON_CLICKS_Numbers"
+        android:onClick="numbers_ONClicks"
         android:id="@+id/main_btn_dot"
         android:layout_width="45dp"
         android:layout_height="60dp"
@@ -259,7 +259,7 @@
         app:strokeWidth="3dp" />
 
     <com.google.android.material.button.MaterialButton
-        android:onClick="ON_CLICKS_Numbers"
+        android:onClick="numbers_ONClicks"
         android:id="@+id/main_btn_zero"
         android:layout_width="125dp"
         android:layout_height="60dp"

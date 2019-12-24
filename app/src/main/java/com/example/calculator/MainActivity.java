@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity
         txtResult = findViewById(R.id.main_resultNumber);
     }
 
-    public void ON_CLICKS_Numbers(View view) {
+    public void numbers_ONClicks(View view) {
         int id = view.getId();
 
 
@@ -56,10 +56,10 @@ public class MainActivity extends AppCompatActivity
                 number = 1;
 
                 if (txtResult.getText().toString().trim().length() > 0) {
-                    txtFirstNum.setText(" ");
-                    txtSecondNum.setText(" ");
-                    txtOperands.setText(" ");
-                    txtResult.setText(" ");
+                    txtFirstNum.setText("");
+                    txtSecondNum.setText("");
+                    txtOperands.setText("");
+                    txtResult.setText("");
                     buttonCheck = false;
                     firstNumberCheck = false;
                     secondNumberCheck = false;
@@ -84,10 +84,10 @@ public class MainActivity extends AppCompatActivity
                 number = 2;
 
                 if (txtResult.getText().toString().trim().length() > 0) {
-                    txtFirstNum.setText(" ");
-                    txtSecondNum.setText(" ");
-                    txtOperands.setText(" ");
-                    txtResult.setText(" ");
+                    txtFirstNum.setText("");
+                    txtSecondNum.setText("");
+                    txtOperands.setText("");
+                    txtResult.setText("");
                     buttonCheck = false;
                     firstNumberCheck = false;
                     secondNumberCheck = false;
@@ -110,10 +110,10 @@ public class MainActivity extends AppCompatActivity
                 number = 3;
 
                 if (txtResult.getText().toString().trim().length() > 0) {
-                    txtFirstNum.setText(" ");
-                    txtSecondNum.setText(" ");
-                    txtOperands.setText(" ");
-                    txtResult.setText(" ");
+                    txtFirstNum.setText("");
+                    txtSecondNum.setText("");
+                    txtOperands.setText("");
+                    txtResult.setText("");
                     buttonCheck = false;
                     firstNumberCheck = false;
                     secondNumberCheck = false;
@@ -136,10 +136,10 @@ public class MainActivity extends AppCompatActivity
                 number = 4;
 
                 if (txtResult.getText().toString().trim().length() > 0) {
-                    txtFirstNum.setText(" ");
-                    txtSecondNum.setText(" ");
-                    txtOperands.setText(" ");
-                    txtResult.setText(" ");
+                    txtFirstNum.setText("");
+                    txtSecondNum.setText("");
+                    txtOperands.setText("");
+                    txtResult.setText("");
                     buttonCheck = false;
                     firstNumberCheck = false;
                     secondNumberCheck = false;
@@ -162,10 +162,10 @@ public class MainActivity extends AppCompatActivity
                 number = 5;
 
                 if (txtResult.getText().toString().trim().length() > 0) {
-                    txtFirstNum.setText(" ");
-                    txtSecondNum.setText(" ");
-                    txtOperands.setText(" ");
-                    txtResult.setText(" ");
+                    txtFirstNum.setText("");
+                    txtSecondNum.setText("");
+                    txtOperands.setText("");
+                    txtResult.setText("");
                     buttonCheck = false;
                     firstNumberCheck = false;
                     secondNumberCheck = false;
@@ -188,10 +188,10 @@ public class MainActivity extends AppCompatActivity
                 number = 6;
 
                 if (txtResult.getText().toString().trim().length() > 0) {
-                    txtFirstNum.setText(" ");
-                    txtSecondNum.setText(" ");
-                    txtOperands.setText(" ");
-                    txtResult.setText(" ");
+                    txtFirstNum.setText("");
+                    txtSecondNum.setText("");
+                    txtOperands.setText("");
+                    txtResult.setText("");
                     buttonCheck = false;
                     firstNumberCheck = false;
                     secondNumberCheck = false;
@@ -214,10 +214,10 @@ public class MainActivity extends AppCompatActivity
                 number = 7;
 
                 if (txtResult.getText().toString().trim().length() > 0) {
-                    txtFirstNum.setText(" ");
-                    txtSecondNum.setText(" ");
-                    txtOperands.setText(" ");
-                    txtResult.setText(" ");
+                    txtFirstNum.setText("");
+                    txtSecondNum.setText("");
+                    txtOperands.setText("");
+                    txtResult.setText("");
                     buttonCheck = false;
                     firstNumberCheck = false;
                     secondNumberCheck = false;
@@ -240,10 +240,10 @@ public class MainActivity extends AppCompatActivity
                 number = 8;
 
                 if (txtResult.getText().toString().trim().length() > 0) {
-                    txtFirstNum.setText(" ");
-                    txtSecondNum.setText(" ");
-                    txtOperands.setText(" ");
-                    txtResult.setText(" ");
+                    txtFirstNum.setText("");
+                    txtSecondNum.setText("");
+                    txtOperands.setText("");
+                    txtResult.setText("");
                     buttonCheck = false;
                     firstNumberCheck = false;
                     secondNumberCheck = false;
@@ -266,10 +266,10 @@ public class MainActivity extends AppCompatActivity
                 number = 9;
 
                 if (txtResult.getText().toString().trim().length() > 0) {
-                    txtFirstNum.setText(" ");
-                    txtSecondNum.setText(" ");
-                    txtOperands.setText(" ");
-                    txtResult.setText(" ");
+                    txtFirstNum.setText("");
+                    txtSecondNum.setText("");
+                    txtOperands.setText("");
+                    txtResult.setText("");
                     buttonCheck = false;
                     firstNumberCheck = false;
                     secondNumberCheck = false;
@@ -292,10 +292,10 @@ public class MainActivity extends AppCompatActivity
                 number = 0;
 
                 if (txtResult.getText().toString().trim().length() > 0) {
-                    txtFirstNum.setText(" ");
-                    txtSecondNum.setText(" ");
-                    txtOperands.setText(" ");
-                    txtResult.setText(" ");
+                    txtFirstNum.setText("");
+                    txtSecondNum.setText("");
+                    txtOperands.setText("");
+                    txtResult.setText("");
                     buttonCheck = false;
                     firstNumberCheck = false;
                     secondNumberCheck = false;
@@ -317,7 +317,8 @@ public class MainActivity extends AppCompatActivity
                 buttonCheck = true;
                 if (!FlagOperandsCheck) {
                     txtFirstNum.append(".");
-                } else {
+                } else
+                    {
                     txtSecondNum.append(".");
                 }
 
@@ -448,9 +449,11 @@ public class MainActivity extends AppCompatActivity
 
 
             case R.id.main_btn_x2:
-                if (firstNumberCheck) {
-                    if (buttonCheck) {
-                        number = Integer.parseInt(String.valueOf(txtFirstNum.getText()));
+                if (firstNumberCheck)
+                {
+                    if (buttonCheck)
+                    {
+                        number = Integer.parseInt(txtFirstNum.getText().toString());
                         number = number * number;
                         txtResult.setText(String.valueOf(number));
                     } else {
